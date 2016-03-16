@@ -1,0 +1,180 @@
+body, section {			/* Change width and height to own preferences */
+	height: 600px;
+}
+
+img {
+ margin-left: auto;
+ margin-right: auto;
+ padding-bottom: 3px;
+}
+
+button, input, select, textarea {
+    line-height: 44px !important;
+    width: 172px !important;
+    }
+
+ul
+{
+list-style-type: none;
+}
+
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+
+/* Basic style tweaks */
+section { padding: 5px;}
+.navbar { margin-bottom: 2px; }
+
+.navbar-default .navbar-nav>li>a {
+    color: #3B5998 !important;
+    float: left !important;
+}
+
+.navbar-nav {
+    width: 175px !important; 
+    text-align: center !important; 
+    display: block !important; 
+    margin: 0 auto !important; 
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: red; }
+
+.navbar-brand {
+	background-image: url('zen.png');
+	background-repeat:no-repeat;
+	background-position: center;
+	width: 500px;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    float: left !important;
+    height: 50px !important;
+    padding: 40px 15px !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #3B5998 !important;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    background-color: #000 !important;
+}
+
+.infozone{
+	float:left;
+	position:relative;
+	height:270px;
+	background-color: #000;
+	background-color: rgba(0,0,0);
+}
+
+.clear {
+clear: left;
+float: left;
+}
+
+
+#keyWords {
+    width: 500px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+
+.well {
+	max-height: 600px;
+	padding-top: 10px;
+	width: 100%;
+	overflow: auto;"
+	}
+
+	/* CSS REQUIRED */
+.state-icon {
+    left: -5px;
+}
+.list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+}
+
+.well .list-group {
+    margin-bottom: 0px;
+}
+
+li.list-group-item {
+    text-align: center;
+}
+
+#description {
+	width: 525px !important;
+}
+
+#form {
+	padding: 0 0 0 7px;
+}
+
+.footer-brand {
+	background-image: url('wuno.png');
+	background-repeat:no-repeat;
+	background-position: center;
+	width: 500px;
+    background-color: transparent;
+}
+
+.footer-brand {
+    float: left !important;
+    height: 50px !important;
+    padding: 40px 15px !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
+}
+
+#nav-1 {
+		overflow-x: hidden;
+	background-image: url('zen.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#nav-2 {
+		overflow-x: hidden;
+	background-color: #fff;
+	padding: 30px;
+}
+label {
+display:block;
+line-height:40px;
+height:40px;
+width: 520px;
+border-radius:40px;
+-webkit-font-smoothing: antialiased; 
+margin-top:10px;
+font-family:Arial,Helvetica,sans-serif;
+color:gray;
+text-align:center;
+}
+
+input[type=checkbox] {
+display: none;
+}
+
+input:checked + label {
+color: #F00;
+}
+
+input:checked + label:before {
+content: "\2713";
+}

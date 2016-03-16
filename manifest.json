@@ -1,0 +1,48 @@
+{
+ "name": "Wuno Zensoring",
+  "version" : "1.0",
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://connect.facebook.net; object-src 'self'",  
+   "permissions": [
+   "activeTab",
+  "tabs", "http://*/*", "https://*/*",
+   "storage",
+    "http://www.facebook.com/*" ,
+    "https://www.wuno.com/*"
+   ],
+  "description": "This extension will search the document file for keywords and hide their parent div.",
+  "icons": {                   
+    "19": "icon19.png",
+    "38": "icon38.png",
+    "48": "icon48.png",
+    "128": "icon128.png"  
+  },    
+    "background": {
+    "persistent": false,
+    "scripts": ["jquery-1.11.3.min.js","background.js","popup.js"]
+  },
+     "content_scripts": [{
+        "matches": [
+                    "<all_urls>"
+                    ],
+        "js":         ["content.js","custom.js","popup.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }],
+     "web_accessible_resources": [
+        "popup.js", "content.js"
+        ],
+  "browser_action": {
+    "default_icon": "icon.png128",
+    "default_popup": "popup.html",
+    "default_icon": {                   
+      "19": "icon19.png",
+      "38": "icon38.png",
+      "48": "icon48.png",
+      "128": "icon128.png"        
+  }
+  },
+     "manifest_version": 2
+}
+
+
+
